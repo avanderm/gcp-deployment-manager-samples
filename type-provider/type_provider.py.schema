@@ -1,0 +1,25 @@
+info:
+  title: Create Type Provider
+  author: Antoine Vandermeersch
+  description: |
+    Create a type provider from a Google discovery document, passing
+    an Oauth2 token for authorization to deploy the resources described
+    in the document for the project.
+
+imports:
+  - path: type_provider.py
+
+required:
+  - descriptorUrl
+  - typeProviderName
+
+properties:
+  descriptorUrl:
+    type: string
+    description: URL to the Google JSON formatted discovery document
+  typeProviderName:
+    type: string
+    description: Name of the type provider for usage later on
+
+documentation:
+  - type-provider/README.md

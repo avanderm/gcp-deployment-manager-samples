@@ -1,0 +1,9 @@
+imports:
+  - path: type_provider.py
+
+resources:
+  - name: type_provider
+    type: type_provider.py
+    properties:
+      typeProviderName: cloudrun-provider
+      descriptorUrl: "https://run.googleapis.com/$discovery/rest?version=v1"

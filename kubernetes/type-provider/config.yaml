@@ -1,0 +1,9 @@
+imports:
+  - path: cluster.py
+
+resources:
+  - name: cluster
+    type: cluster.py
+    properties:
+      zone: europe-west1-b
+      initialNodeCount: 3

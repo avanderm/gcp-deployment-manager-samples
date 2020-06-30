@@ -1,0 +1,12 @@
+imports:
+  - path: deployment.py
+  
+resources:
+  - name: my-service
+    type: deployment.py
+    properties:
+      clusterType: kubernetes-test-cluster-type
+      image: gcr.io/trv-hs-hp-playground-test/apollo-creedql:production
+      port: 4000
+      bucket: graphql-production-bucket
+      topic: projects/trv-hs-hp-playground-test/topics/graphql-production-badges
